@@ -16,7 +16,7 @@ export const getAPIEndpointRestApi = (): string => {
   }
 };
 
-export function axiosGraphql<TData, TVariables>(
+export function axiosGraphQL<TData, TVariables>(
   query: string,
   variables?: TVariables
 ) {

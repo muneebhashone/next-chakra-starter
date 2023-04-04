@@ -1,6 +1,6 @@
 # next-chakra-starter
 
-Next-Chakra-Starter is a starter template (boilerplate) for building modern web applications with Next.js (TypeScript), Chakra UI, axios, react-icons, react-hook-form, and zustand. It provides a solid foundation for quickly prototyping and developing production-ready applications with a consistent UI design, robust state management, and efficient data fetching.
+Next-Chakra-Starter is a starter template (boilerplate) for building modern web applications with Next.js (TypeScript), Chakra UI, axios, react-query, react-icons, react-hook-form, and zustand. It provides a solid foundation for quickly prototyping and developing production-ready applications with a consistent UI design, robust state management, and efficient data fetching.
 
 # Features
 
@@ -12,12 +12,21 @@ Next-Chakra-Starter is a starter template (boilerplate) for building modern web 
 
 ✔ Form handling with react-hook-form.
 
-✔ Data fetching with axios that supports RESTful API requests, error handling, and cancellation. It includes two named functions, axios (instance) for fetching RESTful APIs and axiosGraphql for fetching GraphQL APIs, located in the src/utils/axios.fetcher.ts file.
+✔ Data fetching with react-query.
 
-✔ A set of utility and helper functions for common tasks and workflows, located in the src/utils/ directory:
-cloudinary.helpers.ts - includes utilities for uploading images to Cloudinary and deleting by token ID.
+# Utils
 
-✔ next.utils.ts - includes helpful utils:
+✔ src/utils/axios.fetcher.ts - includes helpful utils for Data fetching:
+
+- axiosGraphQL - for fetching the data from a GraphQL API.
+- axios - for fetching the data from a RESTful API.
+
+✔ src/utils/cloudinary.helpers.ts - includes helpful utils for Cloudinary:
+
+- makeUploadRequest - for uploading file to cloudinary.
+- makeDeleteRequest - for deleting file from cloudinary.
+
+✔ src/utils/next.utils.ts - includes helpful utils:
 
 - checkIsServer - for checking whether you are on a server or client.
 - convertToBase64 - for converting a file to base64.
