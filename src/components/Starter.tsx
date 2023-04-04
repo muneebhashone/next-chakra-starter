@@ -2,11 +2,12 @@ import {
   Button,
   Flex,
   Heading,
-  Image,
   Stack,
   Text,
   useBreakpointValue,
+  Box,
 } from "@chakra-ui/react";
+import NextImage from "./NextImage";
 
 export default function Starter() {
   return (
@@ -55,13 +56,14 @@ export default function Starter() {
         </Stack>
       </Flex>
       <Flex flex={1}>
-        <Image
-          alt={"Login Image"}
-          objectFit={"cover"}
-          src={
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          }
-        />
+        <Box sx={{ img: { objectFit: "cover", height: "100%" } }}>
+          <NextImage
+            width={1000}
+            height={1000}
+            alt={"Login Image"}
+            src="/assets/images/placeholder.png"
+          />
+        </Box>
       </Flex>
     </Stack>
   );
