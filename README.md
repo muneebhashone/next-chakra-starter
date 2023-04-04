@@ -1,38 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-chakra-starter
 
-## Getting Started
+Next-Chakra-Starter is a starter template (boilerplate) for building modern web applications with Next.js (TypeScript), Chakra UI, axios, react-icons, react-hook-form, and zustand. It provides a solid foundation for quickly prototyping and developing production-ready applications with a consistent UI design, robust state management, and efficient data fetching.
 
-First, run the development server:
+# Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+✔ Pre-configured setup with Next.js, Chakra UI, axios, react-icons, react-hook-form, and zustand.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✔ Customizable theme and styling system using Chakra UI's design tokens and component props - src/theme/index.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+✔ Global state management solution with zustand.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+✔ Form handling with react-hook-form.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+✔ Data fetching with axios that supports RESTful API requests, error handling, and cancellation. It includes two named functions, axios (instance) for fetching RESTful APIs and axiosGraphql for fetching GraphQL APIs, located in the src/utils/axios.fetcher.ts file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+✔ A set of utility and helper functions for common tasks and workflows, located in the src/utils/ directory:
+cloudinary.helpers.ts - includes utilities for uploading images to Cloudinary and deleting by token ID.
 
-## Learn More
+✔ next.utils.ts - includes helpful utils:
 
-To learn more about Next.js, take a look at the following resources:
+- checkIsServer - for checking whether you are on a server or client.
+- convertToBase64 - for converting a file to base64.
+- reloadSession - for firing the visibilitychange event without changing the tab.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+next-chakra-starter is intended for developers who want to start building web applications with Next.js, Chakra UI, axios, react-icons, react-hook-form, and zustand. To use the starter template, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Clone the repository: git clone https://github.com/muneebhashone/next-chakra-starter.git
+Navigate to the project directory: cd next-chakra-starter
+Install dependencies: npm install
+Run the development server: npm run dev
 
-## Deploy on Vercel
+Once the development server is running, you can start modifying the index (src/pages/index.tsx), and styles to fit your project's requirements. You can also customize the theme and styling system by editing the src/theme/index.ts file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Contributions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+next-chakra-starter is an open-source project that welcomes contributions from developers of all levels and backgrounds. If you find a bug, want to suggest a feature, or want to improve the documentation, please create an issue or pull request in the project's repository.
