@@ -4,7 +4,7 @@ Next-Chakra-Starter is a starter template (boilerplate) for building modern web 
 
 # Features
 
-✔ Pre-configured setup with Next.js, Chakra UI, axios, react-icons, react-hook-form, and zustand.
+✔ Pre-configured setup with Next.js, Chakra UI, axios, react-query, react-icons, react-hook-form, and zustand.
 
 ✔ Customizable theme and styling system using Chakra UI's design tokens and component props - src/theme/index.
 
