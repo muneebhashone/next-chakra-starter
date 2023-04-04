@@ -25,10 +25,13 @@ cloudinary.helpers.ts - includes utilities for uploading images to Cloudinary an
 
 next-chakra-starter is intended for developers who want to start building web applications with Next.js, Chakra UI, axios, react-icons, react-hook-form, and zustand. To use the starter template, follow these steps:
 
-Clone the repository: git clone https://github.com/muneebhashone/next-chakra-starter.git
-Navigate to the project directory: cd next-chakra-starter
-Install dependencies: npm install
-Run the development server: npm run dev
+1. Clone the repository: git clone https://github.com/muneebhashone/next-chakra-starter.git
+
+2. Navigate to the project directory: cd next-chakra-starter
+
+3. Install dependencies: npm install
+
+4. Run the development server: npm run dev
 
 Once the development server is running, you can start modifying the index (src/pages/index.tsx), and styles to fit your project's requirements. You can also customize the theme and styling system by editing the src/theme/index.ts file.
 
